@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>跳一跳游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="score">分数: <span id="score">0</span></div>
+            <div class="best-score">最高分: <span id="bestScore">0</span></div>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div class="game-start" id="startScreen">
+            <div class="game-title">跳一跳</div>
+            <button id="startButton">开始游戏</button>
+        </div>
+        
+        <div class="game-over" id="gameOverScreen">
+            <div class="game-over-title">游戏结束</div>
+            <div class="final-score">得分: <span id="finalScore">0</span></div>
+            <button id="restartButton">再来一次</button>
+        </div>
+    </div>
+    
+    <script src="three.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
